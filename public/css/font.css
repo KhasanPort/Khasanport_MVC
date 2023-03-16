@@ -1,0 +1,35 @@
+@font-face {
+    font-family: love;
+    src: url(../font/lovea/Lovea.otf);
+  }
+  @font-face {
+    font-family: love1;
+    src: url(../font/love_2/Love.ttf);
+  }
+  @font-face {
+    font-family: love2;
+    src: url(../font/love_3/Love.ttf);
+  }
+  @font-face {
+    font-family: love3;
+    src: url(../font/love_5/Love.ttf);
+  }
+  @font-face {
+    font-family: love4;
+    src: url(../font/love_8/Love.otf);
+  }
+  .font-love {
+    font-family: love;
+  }
+  .font-love1 {
+    font-family: love1;
+  }
+  .font-love2 {
+    font-family: love2;
+  }
+  .font-love3 {
+    font-family: love3;
+  }
+  .font-love4 {
+    font-family: love4;
+  }

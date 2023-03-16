@@ -1,0 +1,164 @@
+/* Custom CSS */
+  * {
+    transition: 1s all;
+  }
+
+  #mother {
+    background: url() ;
+  }
+
+  .text-low {
+    color: black;
+  }
+  .text-low button {
+    opacity: .5;
+  }
+  .bg-dark {
+    --tw-bg-opacity: 1;
+    background-color: #0f172a;
+  }
+  input, input:focus, input:hover, button, button:focus, button:hover {
+    border: none !important;
+    outline: none;
+  }
+  #nav-bar {
+    backdrop-filter: blur(10px);
+    transition: all 1s;
+  }
+  .navBar {
+    transition: all 1s;
+    transform: translateX(-450px);
+  }
+  li button.active {
+    background:  white;
+    color: black;
+    font-weight: bold;
+    opacity: 1;
+    position: relative;
+    border-bottom-left-radius: 99999px;
+    border-top-left-radius: 99999px;
+    transition: 1s all;
+    /* animation: active-button 2s ease-out forwards; */
+  }
+  li button.active:hover {
+    background: white;
+    opacity: 1;
+    color: rgb(20 184 166);
+  }
+  li button.active:hover::before {
+    background: white;
+    color: rgb(20 184 166);
+    animation : fade 1s forwards;
+  }
+  li button.active:hover::after {
+    background: white;
+    color: rgb(20 184 166);
+    animation : fade 1s forwards;
+  }
+  li button.active a {
+    transform: translateX(50px);
+    color: rgb(20 184 166);
+  }
+  li button.active a:hover {
+    color: rgb(20 184 166);
+  }
+  li button.active::before {
+    content: '';
+    margin-top: -10px;
+    border-top-left-radius: 10px;
+    width: 20px;
+    height: 5px;
+    background: rgb(209, 213, 219, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  li button.active::after {
+    content: '';
+    margin-bottom: -10px;
+    border-bottom-left-radius: 10px;
+    width: 20px;
+    height: 5px;
+    background: rgb(209, 213, 219, 1);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  li button.active:hover {
+    color: black;
+  }
+  .navbar-fixed {
+    --tw-bg-opacity: 0.7;
+    --tw-backdrop-blur: blur(4px);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* bottom: 0 ; */
+    backdrop-filter: blur(4px);
+    box-shadow: 5px 0 5px 5px black;
+  }
+  .navbar-fixed::before {
+    content: '';
+    display: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    opacity: .7;
+    backdrop-filter: blur(4px);
+    
+  }
+  .fixed-an {
+    animation: 1s fixed-an;
+  }
+  .foto-galery li img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 10px -10px #0f172a;
+  }
+    
+  @keyframes fixed-an {
+    from {
+      transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0px);
+      }
+  }
+  @keyframes active-button {
+    0% {
+      display: flex;
+      opacity: 1;
+      font-weight: bold;  
+      justify-content: center;
+    }    
+    50% {
+      width: 50%;
+    }
+    60% {
+      width: 60%;
+    }
+    70% {
+      width: 70%;
+    }
+    80% {
+      width: 80%;
+    }
+    90% {
+      width: 90%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  @keyframes fade {
+    from {
+      transform: translateX(50px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+/* End Custom CSS */
